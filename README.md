@@ -25,7 +25,7 @@ To effectively model both purchasing behavior and revenue prediction, I employ a
 
 ## Data Description
 
-The dataset consists of customer visit data for the Google Merchandise Store, provided by Google and available on Kaggle. Each row in the dataset represents a visit to the store, containing information about:
+The dataset consists of customer visit data for the Google Merchandise Store. Each row in the dataset represents a visit to the store, containing information about:
 
 - Visitor Information (`fullVisitorId`): A unique identifier for each user.
 - Visit Details (`visitId`, `visitStartTime`): Details about individual sessions.
