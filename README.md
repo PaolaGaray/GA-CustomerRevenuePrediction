@@ -11,18 +11,6 @@ The 80/20 rule is often observed in customer behavior, where only a small percen
 
 ---
 
-## Two-Stage Modeling Approach
-
-To effectively model both purchasing behavior and revenue prediction, I employ a two-stage approach:
-1. Stage 1: Classification Model:
-   - Objective: Predict whether a user will make a purchase (binary classification).
-   - Benefit: By isolating the subset of users likely to make a purchase, I can focus the second model on predicting revenue amounts, reducing noise from non-purchasing users.
-3. Stage 2: Regression Model:
-   - Objective: For users likely to make a purchase, predict the amount of revenue generated.
-   - Benefit: This approach allows me to model spending behaviour more accurately, focusing only on users identified as potential spenders.
-
----
-
 ## Data Description
 
 The dataset consists of customer visit data for the Google Merchandise Store. Each row in the dataset represents a visit to the store, containing information about:
