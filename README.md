@@ -1,4 +1,4 @@
-# Google Analytics Customer Revenue Prediction
+# Google Analytics - Predicting Customer Revenue to Maximize ROI
 ---
 ## Overview
 
