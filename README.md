@@ -8,8 +8,6 @@ This project focuses on analyzing customer data from the Google Merchandise Stor
 1. Stage 1 (Classification): Identify potential buyers to narrow down the target audience for marketing campaigns.
 2. Stage 2 (Regression): Predict revenue for these buyers, enabling precise budget allocation based on predicted revenue contributions.
 
-By leveraging machine learning, this project provides actionable insights to target the right customers and improve marketing ROI.
-
 ---
 
 ## Key Features
