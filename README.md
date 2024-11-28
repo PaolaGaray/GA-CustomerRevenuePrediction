@@ -41,3 +41,14 @@ This project focuses on analyzing customer data from the Google Merchandise Stor
          - RMSE = 10.7835
          - R² = 0.3419
     Result: Estimates revenue for buyers, enabling prioritization of high-value customers.
+
+--- 
+
+## Impact
+
+1. Optimized Marketing Spend: Focuses budgets on high-value customers.
+2. Improved ROI: Guides investment toward customers with higher revenue potential.
+3. Scalable Framework: Provides a reliable structure for customer segmentation and revenue prediction.
+
+---
+
