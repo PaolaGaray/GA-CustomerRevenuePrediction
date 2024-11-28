@@ -1,7 +1,13 @@
 # Google Analytics Customer Revenue Prediction
 ---
+## Overview
 
-This project aims to predict customer spending at the Google Merchandise Store (GStore) based on their visit data. To address the varying behaviors of users who may or may not make purchases, I utilize a two-stage approach. This method allows me to first predict the likelihood of a purchase and then, for those likely to make a purchase, predict the amount of revenue generated.
+This project focuses on analyzing customer data from the Google Merchandise Store (GStore) to optimize marketing strategies and maximize the return on investment (ROI). The two-stage approach is designed to:
+
+1. Identify potential buyers to narrow down the target audience for marketing campaigns.
+2. Predict revenue for these buyers, enabling precise budget allocation based on predicted revenue contributions.
+
+By leveraging machine learning, this project provides actionable insights to target the right customers and improve marketing ROI.
 
 ---
 
