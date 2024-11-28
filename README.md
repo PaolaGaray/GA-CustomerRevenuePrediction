@@ -18,6 +18,6 @@ By leveraging machine learning, this project provides actionable insights to tar
   - Temporal data: `month`, `day_of_week`, `is_weekend`, `is_holiday_season`.
   - Acquisition channels: `channelGrouping`, `device_category`, `country`.
 - Regression Target:
-  - `log_transactionRevenue`, transformed as $$\text{ln(revenue+1)$$
+  - `log_transactionRevenue`, transformed as $$\text{ln(revenue+1)}$$
 
 ---
