@@ -1,36 +1,54 @@
-# Google Analytics Customer Revenue Prediction
+# Google Analytics - Predicting Customer Revenue to Maximize ROI
 ---
-
-This project aims to predict customer spending at the Google Merchandise Store (GStore) based on their visit data. To address the varying behaviors of users who may or may not make purchases, I utilize a two-stage approach. This method allows me to first predict the likelihood of a purchase and then, for those likely to make a purchase, predict the amount of revenue generated.
-
----
-
 ## Project Overview
+The 80/20 rule is often observed in customer behavior, where only a small percentage of customers generate most of the revenue. 
 
-The 80/20 rule is often observed in customer behavior, where only a small percentage of customers generate most of the revenue. This project uses Google Analytics data to analyze these patterns and build predictive models that help identify both potential spenders and their likely contribution to revenue.
+This project focuses on analyzing customer data from the Google Merchandise Store (GStore) to optimize marketing strategies and maximize the return on investment (ROI). The two-stage approach is designed to:
 
----
-
-## Two-Stage Modeling Approach
-
-To effectively model both purchasing behaviour and, revenue prediction, there is a two-stage approach:
-1. Stage 1: Classification Model:
-   - Objective: Predict whether a user will make a purchase (binary classification).
-   - Benefit: By isolating the subset of users likely to make a purchase, I can focus the second model on predicting revenue amounts, reducing noise from non-purchasing users.
-3. Stage 2: Regression Model:
-   - Objective: For users likely to make a purchase, predict the amount of revenue generated.
-   - Benefit: This approach allows me to model spending behaviour more accurately, focusing only on users identified as potential spenders.
+1. Stage 1 (Classification): Identify potential buyers to narrow down the target audience for marketing campaigns.
+2. Stage 2 (Regression): Predict revenue for these buyers, enabling precise budget allocation based on predicted revenue contributions.
 
 ---
 
-## Data Description
+## Key Features
+- Classification Features:
+  - Customer behavior: `hits_per_visit`, `bounced`, `time_on_site`.
+  - Temporal data: `month`, `day_of_week`, `is_weekend`, `is_holiday_season`.
+  - Acquisition channels: `channelGrouping`, `device_category`, `country`.
+- Regression Target:
+  - `log_transactionRevenue`, transformed as $$\text{ln(revenue+1)}$$
 
-The dataset consists of customer visit data for the Google Merchandise Store. Each row in the dataset represents a visit to the store, containing information about:
+---
 
-- Visitor Information (`fullVisitorId`): A unique identifier for each user.
-- Visit Details (`visitId`, `visitStartTime`): Details about individual sessions.
-- Traffic Source (`trafficSource`, `channelGrouping`): Information about how the user arrived at the store.
-- Device and Location (`device`, `geoNetwork`): Specifications about the user’s device and location.
-- Session Aggregates (`totals`): Aggregated data per session, including metrics like page views and transaction revenue.
+## Methodology
+1. Data Preparation:
+     - Addressed class imbalance using oversampling and class weighting.
 
-The target variable for prediction is the **total revenue per user** (summed across all sessions), transformed as `ln(y_user + 1)` to account for skewed revenue distribution. This transformation allows the model to learn effectively across a range of user spending patterns.
+2. Stage 1: Buyer Prediction
+     - Model: Random Forest Classifier.
+     - Techniques: SMOTE, class weighting, and threshold tuning to balance recall (buyers) and precision.
+     - Performance:
+         - ROC-AUC = 0.9792
+         - Precision (Buyers) = 0.31
+         - Recall (Buyers) = 0.69
+    Result: Identifies potential buyers, effectively narrowing the audience for targeted marketing.
+
+3. Stage 2: Revenue Prediction
+    - Dataset: Filtered predicted buyers from Stage 1 and included `log_transactionRevenue` as the target.
+    - Target Transformation: Applied $$\text{ln(revenue+1)}$$ to address skewness, stabilize variance, and handle zero values.
+    - Model: Random Forest Regressor.
+    - Performance:
+         - RMSE = 10.7835
+         - R² = 0.3419
+    Result: Estimates revenue for buyers, enabling prioritization of high-value customers.
+
+--- 
+
+## Impact
+
+1. Optimized Marketing Spend: Focuses budgets on high-value customers.
+2. Improved ROI: Guides investment toward customers with higher revenue potential.
+3. Scalable Framework: Provides a reliable structure for customer segmentation and revenue prediction.
+
+---
+
