@@ -51,4 +51,6 @@ This project focuses on analyzing customer data from the Google Merchandise Stor
 3. Scalable Framework: Provides a reliable structure for customer segmentation and revenue prediction.
 
 ---
+## Dashboadr
+---
 
