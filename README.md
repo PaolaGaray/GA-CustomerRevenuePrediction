@@ -30,7 +30,7 @@ Purchasers display significantly different behaviours compared to non-purchasers
      - Addressed class imbalance using SMOTE and class weighting.
      - Engineered features from customer behaviour and temporal data.
 
-2. Stage 1: Buyer Prediction (Classification)
+2. Stage 1: **Buyer Prediction (Classification)**
      - Model: Random Forest Classifier.
      - Objective: Accurately identify potential buyers.
      - Key Metrics:
@@ -38,7 +38,7 @@ Purchasers display significantly different behaviours compared to non-purchasers
          - Precision (Buyers) = 0.31
          - Recall (Buyers) = 0.69
 
-3. Stage 2: Revenue Prediction (Regression)
+3. Stage 2: **Revenue Prediction (Regression)**
     - Model: Random Forest Regressor.
     - Objective: Predict revenue for potential buyers to prioritize high-value customers.
     - Target Transformation: Applied $$\text{ln(revenue+1)}$$ to handle skewness and zero values.
