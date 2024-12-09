@@ -12,6 +12,7 @@ This project aims to:
 ## Key Insights
 ## Purchasers vs. Non-Purchasers
 The stark disparity between purchasers and non-purchasers in e-commerce is visualized below, demonstrating the need for a focused strategy:
+
 <img src="images/number_users.png" width="400">
 
 ### Behavioral Differences
