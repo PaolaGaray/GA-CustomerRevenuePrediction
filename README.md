@@ -47,13 +47,12 @@ Purchasers display significantly different behaviours compared to non-purchasers
          - R² = 0.3419
 --- 
 
-## Impact
+## Why This Matters
 
-1. Optimized Marketing Spend: Focuses budgets on high-value customers.
-2. Improved ROI: Guides investment toward customers with higher revenue potential.
-3. Scalable Framework: Provides a reliable structure for customer segmentation and revenue prediction.
+1. **Optimized Marketing Spend**: By focusing on a narrow audience of high-value customers, marketing resources are utilized effectively.
+2. **Improved ROI**: Predictive revenue estimates ensure targeted investments yield higher returns.
+3. **Scalable Framework**: The methodology can be adapted to other e-commerce platforms for customer segmentation and revenue prediction.
 
----
-## Dashboadr
----
+--- 
+## Results Dashboard
 
