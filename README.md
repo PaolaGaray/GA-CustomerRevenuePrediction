@@ -10,11 +10,9 @@ This project aims to:
 ---
 
 ## Key Insights
-### Purchasers vs. Non-Purchasers
-
-| **Description** | **Visualization** |
+| **Purchasers vs. Non-Purchasers** | **Visualization** |
 |------------------|--------------------|
-| The stark disparity between purchasers and non-purchasers in e-commerce is visualized below, demonstrating the need for a focused strategy. | <img src="images/number_users.png" alt="Purchasers vs Non-Purchasers" width="600"> |
+| The stark disparity between purchasers and non-purchasers in e-commerce is visualized below, demonstrating the need for a focused strategy. | <img src="images/number_users.png" alt="Purchasers vs Non-Purchasers" width="800"> |
 
 ---
 
