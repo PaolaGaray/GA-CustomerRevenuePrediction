@@ -21,32 +21,30 @@ Purchasers display significantly different behaviours compared to non-purchasers
 - Interact with more pages.
 - Spend substantially more time on the site.
 
-<img src="images/purcharsesVSnon-purcharsers.png" width="600"> |
+<img src="images/purcharsesVSnon-purcharsers.png" width="520">
 
 ---
 
 ## Methodology
 1. Data Preparation:
-     - Addressed class imbalance using oversampling and class weighting.
+     - Addressed class imbalance using SMOTE and class weighting.
+     - Engineered features from customer behaviour and temporal data.
 
-2. Stage 1: Buyer Prediction
+2. Stage 1: **Buyer Prediction (Classification)**
      - Model: Random Forest Classifier.
-     - Techniques: SMOTE, class weighting, and threshold tuning to balance recall (buyers) and precision.
-     - Performance:
+     - Objective: Accurately identify potential buyers.
+     - Key Metrics:
          - ROC-AUC = 0.9792
          - Precision (Buyers) = 0.31
          - Recall (Buyers) = 0.69
-    Result: Identifies potential buyers, effectively narrowing the audience for targeted marketing.
 
-3. Stage 2: Revenue Prediction
-    - Dataset: Filtered predicted buyers from Stage 1 and included `log_transactionRevenue` as the target.
-    - Target Transformation: Applied $$\text{ln(revenue+1)}$$ to address skewness, stabilize variance, and handle zero values.
+3. Stage 2: **Revenue Prediction (Regression)**
     - Model: Random Forest Regressor.
-    - Performance:
+    - Objective: Predict revenue for potential buyers to prioritize high-value customers.
+    - Target Transformation: Applied $$\text{ln(revenue+1)}$$ to handle skewness and zero values.
+    - Key Metrics:
          - RMSE = 10.7835
          - R² = 0.3419
-    Result: Estimates revenue for buyers, enabling prioritization of high-value customers.
-
 --- 
 
 ## Impact
