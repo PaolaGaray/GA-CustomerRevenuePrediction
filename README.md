@@ -1,12 +1,11 @@
 # Google Analytics - Predicting Customer Revenue to Maximize ROI
 ---
 ## Project Overview
-The 80/20 rule is often observed in customer behavior, where only a small percentage of customers generate most of the revenue. 
+In e-commerce, the 80/20 rule—where a small fraction of customers generates the majority of revenue—commonly holds true. However, in this case, the analysis shows an even starker reality: **99% of users do not make purchases**. This highlights the critical importance of optimizing marketing resources to focus on high-value customers.
 
-This project focuses on analyzing customer data from the Google Merchandise Store (GStore) to optimize marketing strategies and maximize the return on investment (ROI). The two-stage approach is designed to:
-
-1. Stage 1 (Classification): Identify potential buyers to narrow down the target audience for marketing campaigns.
-2. Stage 2 (Regression): Predict revenue for these buyers, enabling precise budget allocation based on predicted revenue contributions.
+This project aims to:
+1. Identify potential buyers to narrow the target audience for marketing campaigns.
+2. Predict revenue contributions from buyers to prioritize and optimize marketing spend.
 
 ---
 
