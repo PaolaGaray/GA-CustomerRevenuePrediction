@@ -14,9 +14,7 @@ This project aims to:
 
 | **Description** | **Visualization** |
 |------------------|--------------------|
-| The stark disparity between purchasers and non-purchasers in e-commerce is visualized below, demonstrating the need for a focused strategy. | <img src="images/number_users.png" alt="Purchasers vs Non-Purchasers" width="400"> |
-
-
+| The stark disparity between purchasers and non-purchasers in e-commerce is visualized below, demonstrating the need for a focused strategy. | <img src="images/number_users.png" alt="Purchasers vs Non-Purchasers" width="600"> |
 
 ---
 
