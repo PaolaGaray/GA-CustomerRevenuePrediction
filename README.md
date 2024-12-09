@@ -9,13 +9,10 @@ This project aims to:
 
 ---
 
-## Key Features
-- Classification Features:
-  - Customer behavior: `hits_per_visit`, `bounced`, `time_on_site`.
-  - Temporal data: `month`, `day_of_week`, `is_weekend`, `is_holiday_season`.
-  - Acquisition channels: `channelGrouping`, `device_category`, `country`.
-- Regression Target:
-  - `log_transactionRevenue`, transformed as $$\text{ln(revenue+1)}$$
+## Key Insights
+### Purchasers vs. Non-Purchasers
+The stark disparity between purchasers and non-purchasers in e-commerce is visualized below, demonstrating the need for a focused strategy:
+![Purchasers vs Non-Purchasers](images/number_users.png)
 
 ---
 
