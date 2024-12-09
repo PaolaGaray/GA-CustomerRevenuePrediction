@@ -21,7 +21,7 @@ Purchasers display significantly different behaviours compared to non-purchasers
 - Interact with more pages.
 - Spend substantially more time on the site.
 
-<img src="images/purcharsesVSnon-purcharsers.png" width="600"> |
+<img src="images/purcharsesVSnon-purcharsers.png" width="600">
 
 ---
 
