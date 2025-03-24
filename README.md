@@ -1,4 +1,4 @@
-# Google Analytics - Predicting Customer Revenue to Maximize ROI
+# GA - Predicting Customer Revenue to Maximize ROI
 ---
 ## Project Overview
 In e-commerce, the 80/20 rule—where a small fraction of customers generates the majority of revenue—commonly holds true. However, in this case, the analysis shows an even starker reality: **99% of users do not make purchases**. This highlights the critical importance of optimizing marketing resources to focus on high-value customers.
